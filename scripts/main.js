@@ -1,9 +1,9 @@
 $(document).ready(function(){
-	var arrPlansImgMer = ['images/cars/мерседес/минимальный.jpg','images/cars/мерседес/стандарт.jpg',
+	var arrPlansImgMax = ['images/cars/мерседес/минимальный.jpg','images/cars/мерседес/стандарт.jpg',
 					'images/cars/мерседес/стандарт+.jpg','images/cars/мерседес/стандарт++.jpg',
 					'images/cars/мерседес/стандарт+++.jpg','images/cars/мерседес/целиком.jpg'];
 
-	var arrPartsImgMer = ['images/cars//мерседес/оптика.jpg','images/cars/мерседес/пороги-внутренние.jpg',
+	var arrPartsImgMax = ['images/cars//мерседес/оптика.jpg','images/cars/мерседес/пороги-внутренние.jpg',
 					'images/cars/мерседес/пороги-наружние.jpg','images/cars/мерседес/двери.jpg',
 					'images/cars/мерседес/задние-крылья.jpg','images/cars/мерседес/капот.jpg', 
 					'images/cars/мерседес/передний-бампер.jpg','images/cars/мерседес/задний-бампер.jpg'];
@@ -19,21 +19,23 @@ $('.car-class a').on('click', function(){
 	 return false;
 });
 
-$('.plans-container .image-wrapper img').on('click', function(){
 
- 	var index = $(this).index();
+
 	
-		console.log(index)
-});
+
+
 
 $('.plans li').on('click', function(event){
 
  	$('.plans li a').removeClass('current-plan');
  	$(this).children().addClass('current-plan');
 
+$('.modules').css('visibility', 'visible');
+
+
  	 	var index = $(this).index();
  	 	$('.plans-container .image-wrapper').empty();
- 	 	$('.plans-container .image-wrapper').append('<img src='+arrPlansImgMer[index]+'>');
+ 	 	$('.plans-container .image-wrapper').append('<img src='+arrPlansImgMax[index]+'>');
 
 
 return false;
@@ -41,13 +43,14 @@ return false;
 
 });
 
-$('.partial li').on('click', function(event){
 
+$('.partial li').on('click', function(event){
+$('.modules').css('visibility', 'hidden');
 
 
  	 	var index = $(this).index();
  	 	$('.plans-container .image-wrapper').empty();
- 	 	$('.plans-container .image-wrapper').append('<img src='+arrPartsImgMer[index]+'>');
+ 	 	$('.plans-container .image-wrapper').append('<img src='+arrPartsImgMax[index]+'>');
 
 		console.log(index)
 
