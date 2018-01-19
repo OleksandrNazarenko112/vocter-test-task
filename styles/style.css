@@ -17,6 +17,7 @@ a{
 .show{
 	display: block;
 }
+
 .wrapper {
   width: 1170px;
   margin: 0 auto; 
@@ -85,8 +86,9 @@ margin-bottom: 7px;
 	font-weight: 600;
 }
 .image-wrapper{
-height: 360px;
+	height: 360px;
     float: left;
+
 
 }
 .plans-container div img{
@@ -184,21 +186,69 @@ margin-top: 27px;
 
 
 .modules span{
-background: url(../images/assets/module-icons.png)no-repeat 0% 100%;
-    width: 50px;
-    height: 50px;
+background: url(../images/assets/module-icons.svg)no-repeat -1% 100%;
+    width: 71px;
+    height: 60px;
     display: inline-block;
     text-align: center;
     cursor: pointer;
+    background-size: 480px;
+  
 }
-.modules span:nth-child(2){
-	background: url(../images/assets/module-icons.png)no-repeat 63% 100%;
-    width: 70px;
+.modules div:nth-child(2) span{
+	background: url(../images/assets/module-icons.svg)no-repeat 68% -21%;
+    width: 71px;
+    background-size: 641px;
 }
-.modules span:nth-child(3){
-	background: url(../images/assets/module-icons.png)no-repeat 63% 100%;
+.modules div:nth-child(3) span{
+    background: url(../images/assets/module-icons.svg)no-repeat 38% -65%;
     width: 70px;
+    background-size: 473px;
+}
+.modules div:nth-child(4) span{
+    background: url(../images/assets/module-icons.svg)no-repeat 2% -33%;
+    width: 70px;
+    background-size: 609px;
+}
+.modules div:nth-child(5) span{
+    background: url(../images/assets/module-icons.svg)no-repeat 39% 116%;
+    width: 70px;
+    background-size: 357px;
+    height: 50px;
+}
+.modules div:nth-child(6) span{
+    background: url(../images/assets/module-icons.svg)no-repeat 84% -32%;
+    width: 70px;
+    background-size: 591px;
+}
+.modules div:nth-child(7) span{
+    background: url(../images/assets/module-icons.svg)no-repeat 99% -32%;
+    width: 70px;
+    background-size: 591px;
+}
+.modules div:nth-child(8) span{
+    background: url(../images/assets/module-icons.svg)no-repeat 19% -65%;
+    width: 70px;
+    background-size: 466px;
 }
 .partial{
 	display: none;
+}
+.modules {
+    clear: left;
+}
+.modules div{
+	display: inline-table;
+	
+	width: 70px;
+	  margin-right: 25px;
+	  font-size: 12px;
+	  color: #eb5346;
+}
+.modules div p{
+
+ 
+    vertical-align: middle;
+    text-align: center;
+}
 }
