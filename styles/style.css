@@ -70,13 +70,16 @@ margin-bottom: 7px;
 	margin-bottom: 50px;
 
 }
-.car-class span img{
-	width: auto;
-	visibility: hidden;
-}
-.car-class .current-class img{
-	visibility: visible;
 
+.car-class.current-class:after{
+	content: "";
+	display: block;
+	color: #000;
+	width: 32px;
+	height: 24px;
+	background:url(../images/assets/active-icon.png)no-repeat;
+	margin: 0px auto 50px auto;
+	  
 }
 .car-class{
 	color: #fff;
@@ -252,4 +255,4 @@ background-size: 466px;
     vertical-align: middle;
     text-align: center;
 }
-}
+
