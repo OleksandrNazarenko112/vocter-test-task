@@ -72,8 +72,11 @@ defClassImg();
 
 
 
+
+
 $('.plans li').on('click', function(event){
 
+	
  	$('.plans li a').removeClass('current-plan');
  	$(this).children().addClass('current-plan');
 
@@ -83,6 +86,8 @@ $('.modules').css('visibility', 'visible');
 
 	
  	 	var curPlanIndex = $(this).index();
+ 	 	$('.modules-container .modules').css('display', 'none');
+ 	 	$('.modules-container .modules:eq(' +curPlanIndex +')').css('display', 'block');
  	 	emptyImageWrapper()
  	 	$('.plans-container .image-wrapper').append('<img src='+imagesPlansParts[curClassIndex()].plan[curPlanIndex]+'>'); 
 
@@ -107,9 +112,9 @@ return false;
 
 });
 
-$('.plans ul li:nth-child(6)').on('click', function(event){
-	$('.modules').css('visibility', 'hidden');
-});
+
+
+
    
 $('.car-class a').on('click', function(){
 	 	 $(".cars-clases-container .car-class").removeClass('current-class');
