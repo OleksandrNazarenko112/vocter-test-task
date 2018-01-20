@@ -1,28 +1,33 @@
 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: 'PT Sans',sans-serif;
-  background-color: #fefefe; 
+	padding: 0;
+	margin: 0;
+	font-family: 'PT Sans', sans-serif;
+	background-color: #fefefe;
 }
-a{
+
+a {
 	text-decoration: none;
 }
-.hide{
+
+.hide {
 	display: none;
 }
-.show{
+
+.show {
 	display: block;
 }
 
 .wrapper {
-  width: 1170px;
-  margin: 0 auto; 
+	width: 1170px;
+	margin: 0 auto;
 }
-.page-title{
+
+.page-title {
 	width: 100%;
 	background-color: #eb5346;
 	color: #fff;
@@ -30,260 +35,276 @@ a{
 	text-align: center;
 	font-weight: 600;
 	font-size: 27.95px;
-margin-bottom: 60px;
+	margin-bottom: 60px;
 }
-.page-title img{
 
-vertical-align:middle;
-margin-right: 20px;
+.page-title img {
+	vertical-align: middle;
+	margin-right: 20px;
 }
-.page-title div{
+
+.page-title div {
 	padding: 25px 0 15px 0;
 }
-.cars-clases-container{
+
+.cars-clases-container {
 	display: flex;
 	justify-content: space-between;
-	
 }
-.car-class h4, .car-class a, .plans ul{
+
+.car-class h4,
+.car-class a,
+.plans ul {
 	text-transform: uppercase;
 }
-.car-class a{
-color:#fff;
-background-color: #eb5346;
-padding: 5px 30px;
-margin-bottom: 7px;
-    display: inline-block;
+
+.car-class a {
+	color: #fff;
+	background-color: #eb5346;
+	padding: 5px 30px;
+	margin-bottom: 7px;
+	display: inline-block;
 }
-.car-class h4{
+
+.car-class h4 {
 	background-color: #252e39;
 	color: #fff;
 	font-size: 21.96px;
 	padding: 5px 15px;
 	margin-bottom: 70px;
-	    display: inline-block;
+	display: inline-block;
 }
-.car-class img{
+
+.car-class img {
 	display: block;
 	margin: 0 auto;
 	width: 100%;
 	margin-bottom: 50px;
-
 }
 
-.car-class.current-class:after{
+.car-class.current-class:after {
 	content: "";
 	display: block;
 	color: #000;
 	width: 32px;
 	height: 24px;
-	background:url(../images/assets/active-icon.png)no-repeat;
+	background: url(../images/assets/active-icon.png)no-repeat;
 	margin: 0px auto 50px auto;
-	  
 }
-.car-class{
+
+.car-class {
 	color: #fff;
 	font-size: 21.96px;
 	width: 375px;
 	text-align: center;
 	font-weight: 600;
 }
-.image-wrapper{
+
+.image-wrapper {
 	height: 360px;
-
-
 }
+
 .current-plan-info-container {
-    float: left;
+	float: left;
 }
 
-.plans ul{
+.plans ul {
 	list-style: none;
 	padding-left: 15px;
 	margin: 0;
-
-}
-.plans ul li{
-		margin-bottom: 10px;
 }
 
-.plans{
+.plans ul li {
+	margin-bottom: 10px;
+}
+
+.plans {
 	border-left: 1px solid #000;
 	float: right;
 	width: 300px;
-
-
 }
-.plans li a{
+
+.plans li a {
 	color: #252e39;
 	font-weight: 100;
 	font-size: 14px;
-	line-height:31px;
+	line-height: 31px;
 	display: block;
 	padding: 0 10px 0 38px;
 	margin-left: -38px;
 }
 
-.plans li .current-plan, .plans li a:hover{
-	background:url(../images/assets/red-arrow-hover.png)no-repeat;
+.plans li .current-plan,
+.plans li a:hover {
+	background: url(../images/assets/red-arrow-hover.png)no-repeat;
 	display: block;
 	color: #fff;
 }
-.partial li a{
+
+.partial li a {
 	display: block;
-		padding: 0 10px 0 53px;
+	padding: 0 10px 0 53px;
 	margin-left: -53px;
 }
 
-
-
-.plans .partial-drp{
-	background:url(../images/assets/blue-arrow-drp.png)no-repeat;
+.plans .partial-drp {
+	background: url(../images/assets/blue-arrow-drp.png)no-repeat;
 	color: #fff;
 }
-.plans .partial-drp:hover{
-	background:url(../images/assets/blue-arrow-drp.png)no-repeat;
+
+.plans .partial-drp:hover {
+	background: url(../images/assets/blue-arrow-drp.png)no-repeat;
 }
-.partial-drp{
+
+.partial-drp {
 	margin-bottom: 10px;
-	    display: inline-block;
+	display: inline-block;
 }
 
-.p-widget-container{
+.p-widget-container {
 	width: 585px;
-	    overflow: hidden;
-   margin-left: 80px;
-   height: 310px;
+	overflow: hidden;
+	margin-left: 80px;
+	height: 310px;
 }
-.price-block{ 
-	width:270px;
-	float: left;
-	}
-	.price-block strong{
-		color: #eb5346;
-	}
 
-.price-block strong:first-child{
+.price-block {
+	width: 270px;
+	float: left;
+}
+
+.price-block strong {
+	color: #eb5346;
+}
+
+.price-block strong:first-child {
 	display: block;
 	border-bottom: 1px solid #252e39;
-
 	font-weight: 100;
 	font-size: 22px;
 	margin-bottom: 5px;
 }
-	.price-block strong:last-child{
-		float: right;
-	}
-.price-block + a{
-color:#fff;
-background: #252e39;
-text-transform: uppercase;
-font-size: 22px;
-display: inline-block;
-padding: 8px 45px;
-float: right;
-margin-top: 27px;
+
+.price-block strong:last-child {
+	float: right;
 }
 
-.hood span{
+.price-block+a {
+	color: #fff;
+	background: #252e39;
+	text-transform: uppercase;
+	font-size: 22px;
+	display: inline-block;
+	padding: 8px 45px;
+	float: right;
+	margin-top: 27px;
+}
+
+.hood span {
 	background: url(../images/assets/module-icons.svg)no-repeat -1% 100%;
-    width: 71px;
-       background-size: 480px;
+	width: 71px;
+	background-size: 480px;
 }
-.modules span{
 
-
-    height: 60px;
-    display: inline-block;
-    text-align: center;
- 
-  
+.modules span {
+	height: 60px;
+	display: inline-block;
 }
+
 .wings span {
 	background: url(../images/assets/module-icons.svg)no-repeat 69% -21%;
-    width: 80px;
-    background-size: 641px;
+	width: 80px;
+	background-size: 641px;
 }
-.rear-bumper span, .rear-bumper-shelf span{
-    background: url(../images/assets/module-icons.svg)no-repeat 38% -65%;
-    width: 80px;
-    background-size: 473px;
+
+.rear-bumper span,
+.rear-bumper-shelf span {
+	background: url(../images/assets/module-icons.svg)no-repeat 38% -65%;
+	width: 80px;
+	background-size: 473px;
 }
-.mirrors span{
-    background: url(../images/assets/module-icons.svg)no-repeat 0 -33%;
-    width: 80px;
-    background-size: 609px;
+
+.mirrors span {
+	background: url(../images/assets/module-icons.svg)no-repeat 0 -33%;
+	width: 80px;
+	background-size: 609px;
 }
-.lights span{
-    background: url(../images/assets/module-icons.svg)no-repeat 39% 116%;
-    width: 80px;
-    background-size: 357px;
-    height: 50px;
+
+.lights span {
+	background: url(../images/assets/module-icons.svg)no-repeat 39% 116%;
+	width: 80px;
+	background-size: 357px;
+	height: 50px;
 }
-.handles span{
-    background: url(../images/assets/module-icons.svg)no-repeat 86% -32%;
-    width: 80px;
-    background-size: 591px;
+
+.handles span {
+	background: url(../images/assets/module-icons.svg)no-repeat 86% -32%;
+	width: 80px;
+	background-size: 591px;
 }
-.modules div:nth-child(7) span{
-    background: url(../images/assets/module-icons.svg)no-repeat 101% -32%;
-    width: 80px;
-    background-size: 591px;
+
+.fog-lights span {
+	background: url(../images/assets/module-icons.svg)no-repeat 100% -15%;
+	width: 80px;
+	background-size: 660px;
 }
-.front-bumper span{
-background: url(../images/assets/module-icons.svg)no-repeat 17% -65%;
-    background-size: auto auto;
-width: 80px;
-background-size: 466px;
+
+.front-bumper span {
+	background: url(../images/assets/module-icons.svg)no-repeat 17% -65%;
+	background-size: auto auto;
+	width: 80px;
+	background-size: 466px;
 }
-.inner-threshold span{
-background: url(../images/assets/module-icons.svg)no-repeat 95% 119%;
-    width: 71px;
-    background-size: 348px;
-    height: 50px;
+
+.inner-threshold span {
+	background: url(../images/assets/module-icons.svg)no-repeat 95% 119%;
+	width: 71px;
+	background-size: 348px;
+	height: 50px;
 }
-.doors-end-face span{
-    background: url(../images/assets/module-icons.svg)no-repeat 62% 110%;
-    width: 70px;
-    background-size: 400px;
-}
-.hood-part span{
-background: url(../images/assets/module-icons.svg)no-repeat 16% 100%;
-    width: 71px;
-    background-size: 480px;
-}
-.part-of-wings span{
-    background: url(../images/assets/module-icons.svg)no-repeat 54% -20%;
-    width: 80px;
-    background-size: 641px;
-}
-.partial{
-	display: none;
-}
-.modules {
-    clear: left;
-  
-}
-.modules div{
-	display: inline-table;
-	
+
+.doors-end-face span {
+	background: url(../images/assets/module-icons.svg)no-repeat 62% 110%;
 	width: 70px;
-	  margin-right: 15px;
-	  font-size: 12px;
-	  color: #eb5346;
+	background-size: 400px;
 }
-.modules div p{
-padding: 0 10px;
- 
-    vertical-align: middle;
-    text-align: center;
-    margin: 10px 0 0 0;
-}
-.modules-container{
-min-height: 123px;
 
+.hood-part span {
+	background: url(../images/assets/module-icons.svg)no-repeat 16% 100%;
+	width: 71px;
+	background-size: 480px;
 }
-.preload, .modules-container .modules{
+
+.part-of-wings span {
+	background: url(../images/assets/module-icons.svg)no-repeat 54% -20%;
+	width: 80px;
+	background-size: 641px;
+}
+
+.partial {
 	display: none;
 }
 
+.modules div {
+	display: inline-table;
+	width: 70px;
+	margin-right: 15px;
+	font-size: 12px;
+	color: #eb5346;
+}
+
+.modules div p {
+	padding: 0 10px;
+	vertical-align: middle;
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+
+.modules-container {
+	min-height: 123px;
+}
+
+.preload,
+.modules-container .modules {
+	display: none;
+}
