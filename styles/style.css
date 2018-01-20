@@ -45,7 +45,7 @@ margin-right: 20px;
 	justify-content: space-between;
 	
 }
-.car-class h4, .car-class a, .plans-container ul, .plans .partial-drp{
+.car-class h4, .car-class a, .plans ul{
 	text-transform: uppercase;
 }
 .car-class a{
@@ -90,22 +90,20 @@ margin-bottom: 7px;
 }
 .image-wrapper{
 	height: 360px;
+
+
+}
+.current-plan-info-container {
     float: left;
-
-
 }
-.plans-container div img{
-	float: left;
-}
-.plans-container ul{
+
+.plans ul{
 	list-style: none;
 	padding-left: 15px;
 	margin: 0;
-	    margin: 0;
-    width: 180px;
 
 }
-.plans-container ul li{
+.plans ul li{
 		margin-bottom: 10px;
 }
 
@@ -116,7 +114,7 @@ margin-bottom: 7px;
 
 
 }
-.plans .partial-drp, .plans li a{
+.plans li a{
 	color: #252e39;
 	font-weight: 100;
 	font-size: 14px;
@@ -134,7 +132,7 @@ margin-bottom: 7px;
 .partial li a{
 	display: block;
 		padding: 0 10px 0 53px;
-
+	margin-left: -53px;
 }
 
 
@@ -142,8 +140,6 @@ margin-bottom: 7px;
 .plans .partial-drp{
 	background:url(../images/assets/blue-arrow-drp.png)no-repeat;
 	color: #fff;
-	margin-left: -23px;
-	width: 200px;
 }
 .plans .partial-drp:hover{
 	background:url(../images/assets/blue-arrow-drp.png)no-repeat;
@@ -189,38 +185,42 @@ float: right;
 margin-top: 27px;
 }
 
-
-.modules span{
-background: url(../images/assets/module-icons.svg)no-repeat -1% 100%;
+.hood span{
+	background: url(../images/assets/module-icons.svg)no-repeat -1% 100%;
     width: 71px;
+       background-size: 480px;
+}
+.modules span{
+
+
     height: 60px;
     display: inline-block;
     text-align: center;
-    background-size: 480px;
+ 
   
 }
-.modules div:nth-child(2) span {
+.wings span {
 	background: url(../images/assets/module-icons.svg)no-repeat 69% -21%;
     width: 80px;
     background-size: 641px;
 }
-.modules div:nth-child(3) span, .modules-container .modules:first-child div:nth-child(3) span{
+.rear-bumper span, .rear-bumper-shelf span{
     background: url(../images/assets/module-icons.svg)no-repeat 38% -65%;
     width: 80px;
     background-size: 473px;
 }
-.modules div:nth-child(4) span{
+.mirrors span{
     background: url(../images/assets/module-icons.svg)no-repeat 0 -33%;
     width: 80px;
     background-size: 609px;
 }
-.modules div:nth-child(5) span{
+.lights span{
     background: url(../images/assets/module-icons.svg)no-repeat 39% 116%;
     width: 80px;
     background-size: 357px;
     height: 50px;
 }
-.modules div:nth-child(6) span{
+.handles span{
     background: url(../images/assets/module-icons.svg)no-repeat 86% -32%;
     width: 80px;
     background-size: 591px;
@@ -230,30 +230,29 @@ background: url(../images/assets/module-icons.svg)no-repeat -1% 100%;
     width: 80px;
     background-size: 591px;
 }
-.modules div:nth-child(8) span,.modules-container .modules:nth-child(2) div:nth-child(3) span,
- .modules-container .modules:nth-child(4) div:nth-child(3) span{
+.front-bumper span{
 background: url(../images/assets/module-icons.svg)no-repeat 17% -65%;
     background-size: auto auto;
 width: 80px;
 background-size: 466px;
 }
-.modules-container .modules:first-child div:first-child span{
+.inner-threshold span{
 background: url(../images/assets/module-icons.svg)no-repeat 95% 119%;
     width: 71px;
     background-size: 348px;
     height: 50px;
 }
-.modules-container .modules:first-child div:nth-child(2) span{
+.doors-end-face span{
     background: url(../images/assets/module-icons.svg)no-repeat 62% 110%;
     width: 70px;
     background-size: 400px;
 }
-.modules-container .modules:nth-child(2) div:first-child span{
+.hood-part span{
 background: url(../images/assets/module-icons.svg)no-repeat 16% 100%;
     width: 71px;
     background-size: 480px;
 }
-.modules-container .modules:nth-child(2) div:nth-child(2) span, .modules-container .modules:nth-child(3) div:nth-child(2) span{
+.part-of-wings span{
     background: url(../images/assets/module-icons.svg)no-repeat 54% -20%;
     width: 80px;
     background-size: 641px;
@@ -278,11 +277,13 @@ padding: 0 10px;
  
     vertical-align: middle;
     text-align: center;
+    margin: 10px 0 0 0;
 }
 .modules-container{
-min-height: 133px;
-clear: left;
+min-height: 123px;
+
 }
-.modules-container .modules{
+.preload, .modules-container .modules{
 	display: none;
 }
+
