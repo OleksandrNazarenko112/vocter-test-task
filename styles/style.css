@@ -45,7 +45,7 @@ margin-right: 20px;
 	justify-content: space-between;
 	
 }
-.car-class h4, .car-class a, .plans-container ul{
+.car-class h4, .car-class a, .plans-container ul, .plans .partial-drp{
 	text-transform: uppercase;
 }
 .car-class a{
@@ -96,13 +96,13 @@ margin-bottom: 7px;
 }
 .plans-container div img{
 	float: left;
-
-
 }
 .plans-container ul{
 	list-style: none;
 	padding-left: 15px;
 	margin: 0;
+	    margin: 0;
+    width: 180px;
 
 }
 .plans-container ul li{
@@ -116,7 +116,7 @@ margin-bottom: 7px;
 
 
 }
-.plans li a{
+.plans .partial-drp, .plans li a{
 	color: #252e39;
 	font-weight: 100;
 	font-size: 14px;
@@ -134,7 +134,7 @@ margin-bottom: 7px;
 .partial li a{
 	display: block;
 		padding: 0 10px 0 53px;
-	margin-left: -53px;
+
 }
 
 
@@ -142,6 +142,8 @@ margin-bottom: 7px;
 .plans .partial-drp{
 	background:url(../images/assets/blue-arrow-drp.png)no-repeat;
 	color: #fff;
+	margin-left: -23px;
+	width: 200px;
 }
 .plans .partial-drp:hover{
 	background:url(../images/assets/blue-arrow-drp.png)no-repeat;

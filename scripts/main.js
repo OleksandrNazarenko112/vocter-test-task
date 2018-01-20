@@ -71,10 +71,12 @@ function defClassImg(){
 defClassImg();
 
 
+$('.plans li a').click(function(){
+	return false;
+})
 
 
-
-$('.plans li').on('click', function(event){
+$('.plans li').on('mouseover', function(event){
 
 	
  	$('.plans li a').removeClass('current-plan');
@@ -96,9 +98,11 @@ return false;
 
 
 });
+		
+				
+			
 
-
-$('.partial li').on('click', function(event){
+$('.partial li').on('mouseover', function(event){
 $('.modules').css('visibility', 'hidden');
 
 
