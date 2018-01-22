@@ -121,7 +121,9 @@ a {
 .plans {
 	border-left: 1px solid #000;
 	float: right;
-	width: 300px;
+	width: 178px;
+    margin-right: 120px;
+
 }
 
 .plans li a {
@@ -150,6 +152,10 @@ a {
 .plans .partial-drp {
 	background: url(../images/assets/blue-arrow-drp.png)no-repeat;
 	color: #fff;
+}
+
+.plans-container{
+	overflow: hidden;
 }
 
 .plans .partial-drp:hover {
@@ -301,7 +307,7 @@ a {
 }
 
 .modules-container {
-	min-height: 123px;
+	min-height: 133px;
 }
 
 .preload,

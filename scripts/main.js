@@ -35,7 +35,7 @@ $(document).ready(function () {
 		},
 		{
 			carClass: 'premium',
-			
+
 			plan: ['images/cars/мерседес/минимальный.jpg', 'images/cars/мерседес/стандарт.jpg',
 				'images/cars/мерседес/стандарт+.jpg', 'images/cars/мерседес/стандарт++.jpg',
 				'images/cars/мерседес/стандарт+++.jpg', 'images/cars/мерседес/целиком.jpg'
@@ -61,22 +61,22 @@ $(document).ready(function () {
 
 	$('.plans li a').click(function () {
 		return false;
-	})
+	});
 
 
 	function curClassIndex() {
 		var curClassIndex = $('.car-class.current-class').index();
 		return curClassIndex;
-	}
+	};
 
 	function emptyImageWrapper() {
 		$('.image-wrapper').empty();
-	}
+	};
 
 	function defClassImg() {
 		emptyImageWrapper()
 		$('.image-wrapper').append('<img src=' + imagesPlansParts[curClassIndex()].plan[defPlanIndex] + '>');
-	}
+	};
 	defClassImg();
 
 
@@ -156,7 +156,7 @@ $(document).ready(function () {
 		}
 
 
-	}
+	};
 
 
 });
